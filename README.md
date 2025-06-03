@@ -96,7 +96,9 @@ A CSV dataset containing 36,992 customer records with 23 features.
 **Best Model**: XGBoost
 **Serialization**: Joblib used to save and load model
 
-<pre><code>```python import joblib # Save the model joblib.dump(model, 'churn_model.pkl') # Load the model loaded_model = joblib.load('churn_model.pkl') ``` </code></pre>
+<pre><code>```python import joblib 
+  # Save the model joblib.dump(model, 'churn_model.pkl') 
+  # Load the model loaded_model = joblib.load('churn_model.pkl') ``` </code></pre>
 
 **Web Service**: Served via Flask API
 **Route**: /predict accepts JSON input and returns prediction
